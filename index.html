@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <!-- Font elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Musik autoplay -->
+    <audio id="bg-music" autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <small>Wedding Invitation</small>
+            <h1>Dewita & Febri</h1>
+
+            <div class="guest">
+                Kepada Yth. Bapak/Ibu/Saudara/i:<br>
+                <strong>Tamu Undangan</strong>
+                <p style="font-size:0.8rem; color:#ccc; margin-top:5px;">
+                    Mohon maaf jika ada kesalahan penulisan nama dan gelar
+                </p>
+            </div>
+
+            <button class="btn-open" id="openBtn">✉ Open Invitation</button>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown-section hidden" data-aos="fade-up">
+        <div class="overlay"></div>
+        <div class="countdown-box" data-aos="zoom-in">
+            <h2>Menuju Hari Bahagia</h2>
+            <div class="time">
+                <div data-aos="fade-up" data-aos-delay="200"><span id="days">0</span><small>Hari</small></div>
+                <div data-aos="fade-up" data-aos-delay="400"><span id="hours">0</span><small>Jam</small></div>
+                <div data-aos="fade-up" data-aos-delay="600"><span id="minutes">0</span><small>Menit</small></div>
+                <div data-aos="fade-up" data-aos-delay="800"><span id="seconds">0</span><small>Detik</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Pernikahan Section -->
+    <section id="informasi" class="info-section hidden" data-aos="fade-up">
+        <div class="info-content">
+            <h2 data-aos="zoom-in">Informasi Pernikahan</h2>
+            <div class="info-couple">
+                <div class="person" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=80"
+                        alt="Mempelai Wanita">
+                    <h3>Dewita</h3>
+                    <p>Putri dari Bapak Ahmad & Ibu Siti</p>
+                </div>
+                <div class="person" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                        alt="Mempelai Pria">
+                    <h3>Febri</h3>
+                    <p>Putra dari Bapak Budi & Ibu Ani</p>
+                </div>
+            </div>
+            <p class="syukur" data-aos="fade-up" data-aos-delay="400">
+                Dengan penuh syukur kami melangsungkan pernikahan pada hari yang telah ditetapkan.
+                Kehadiran dan doa restu Bapak/Ibu/Saudara/i sangat berarti bagi kami.
+            </p>
+        </div>
+    </section>
+
+    <!-- Acara Section -->
+    <section id="acara" class="acara-section hidden" data-aos="fade-up">
+        <h2 data-aos="fade-down">Detail Acara</h2>
+        <div class="acara-cards">
+            <div class="card" data-aos="fade-right">
+                <h3>Akad Nikah</h3>
+                <p>Sabtu, 20 Desember 2025</p>
+                <p>Pukul 09:00 WIB</p>
+                <p>Masjid Agung Al-Azhar, Jakarta</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <h3>Resepsi</h3>
+                <p>Sabtu, 20 Desember 2025</p>
+                <p>Pukul 11:00 - 14:00 WIB</p>
+                <p>Gedung Balai Kartini, Jakarta</p>
+            </div>
+        </div>
+        <div class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5671092535794!2d106.82715261532073!3d-6.224575862711662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f157c5d9a6b1%3A0x9b5c89e0a45e1f71!2sBalai%20Kartini!5e0!3m2!1sid!2sid!4v1692000000000!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section hidden" data-aos="fade-up">
+        <div>
+            <div class="initial">D | F</div>
+            <div class="marquee-wrapper">
+                <div class="marquee">
+                    <img src="assets/img/pre1.jfif" alt="prewed 1">
+                    <img src="assets/img/pre2.jfif" alt="prewed 2">
+                    <img src="assets/img/pre3.jfif" alt="prewed 3">
+                    <img src="assets/img/pre4.jfif" alt="prewed 4">
+                    <img src="assets/img/pre1.jfif" alt="prewed 1">
+                    <img src="assets/img/pre2.jfif" alt="prewed 2">
+                    <img src="assets/img/pre3.jfif" alt="prewed 3">
+                    <img src="assets/img/pre4.jfif" alt="prewed 4">
+                </div>
+            </div>
+            <div class="ayat">
+                <strong>QS. Ar-Rum Ayat 21</strong>
+                Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
+                sendiri,
+                agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.
+            </div>
+        </div>
+    </section>
+
+    <!-- Amplop Digital -->
+    <section id="amplop-digital" class="amplop-digital-section" data-aos="fade-up">
+        <h2>Amplop Digital</h2>
+        <p>Doa restu Anda merupakan karunia yang sangat berarti. Jika memberi adalah bentuk tanda kasih,
+            Anda dapat mengirimkannya melalui rekening atau e-wallet berikut:</p>
+
+        <div class="rekening-container">
+            <div class="rekening-card" data-aos="zoom-in">
+                <h3>Bank BCA</h3>
+                <p>1234567890<br><small>a.n Mempelai A</small></p>
+                <button onclick="copyText('1234567890')">Salin Nomor</button>
+            </div>
+
+            <div class="rekening-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>DANA</h3>
+                <p>081234567890<br><small>a.n Mempelai B</small></p>
+                <button onclick="copyText('081234567890')">Salin Nomor</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Section Galeri === -->
+    <section id="galeri" class="galeri-section" data-aos="fade-up">
+        <h2 class="galeri-title">Galeri</h2>
+        <div class="galeri-grid">
+            <img src="https://picsum.photos/id/1018/400/300" alt="Foto Prewed 1" class="galeri-foto" data-aos="zoom-in">
+            <img src="https://picsum.photos/id/1015/400/300" alt="Foto Prewed 2" class="galeri-foto" data-aos="zoom-in">
+            <img src="https://picsum.photos/id/1016/400/300" alt="Foto Prewed 3" class="galeri-foto" data-aos="zoom-in">
+            <img src="https://picsum.photos/id/1021/400/300" alt="Foto Prewed 4" class="galeri-foto" data-aos="zoom-in">
+            <img src="https://picsum.photos/id/1024/400/300" alt="Foto Prewed 5" class="galeri-foto" data-aos="zoom-in">
+            <img src="https://picsum.photos/id/1035/400/300" alt="Foto Prewed 6" class="galeri-foto" data-aos="zoom-in">
+        </div>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+
+    <!-- Guestbook Section -->
+    <section id="guestbook" class="guestbook hidden" data-aos="fade-up">
+        <div class="guestbook-content">
+            <h2>Beri Ucapan & Doa</h2>
+            <form id="ucapanForm">
+                <input type="text" id="nama" placeholder="Nama Anda" required>
+                <textarea id="pesan" rows="4" placeholder="Tulis ucapan atau doa..." required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="ucapan-list" id="ucapanList"></div>
+        </div>
+    </section>
+
+    <!-- === Section Footer === -->
+    <footer id="footer" class="footer" data-aos="fade-up">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <h2 class="footer-title">Terima Kasih</h2>
+            <p class="footer-subtitle">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i
+                berkenan hadir untuk memberikan doa restu.</p>
+            <p class="footer-names">Yuni & Adnan</p>
+            <p class="footer-copy">© 2025 Undangan Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- AOS & Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
